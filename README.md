@@ -1,3 +1,4 @@
+![Trajectory Diagram](images/trajectory.png)
 
 ## Impact Angle Constrained 3D Guidance Law
 
