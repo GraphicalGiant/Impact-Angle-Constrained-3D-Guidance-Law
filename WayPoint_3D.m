@@ -1,9 +1,11 @@
 
-alpha_f_values = [60, 120, ];
+alpha_f_values = [60, 120];
 fig1 = figure(1);
 % hold on;
 grid on;
 box on;
+
+% Declaring placeholders
 legend_entries = [];
 LeadAngle_profiles0 = {};
 time_values0 = {};
@@ -13,6 +15,8 @@ flightAngle_profiles = {};
 headingAngle_profiles = {};
 acceleration_profiles = {};
 
+
+% to generate results for multiple alpha_f values
 for i = 1:numel(alpha_f_values)
 
     GeometricCalc_3D
@@ -34,7 +38,7 @@ for i = 1:numel(alpha_f_values)
     heading_angle = [];
     lead_angle_index = 0; % Initialize outside the loop
 
-    % Navigation Loop
+    %  PN Guidance Loop
     for t = 1:length(time)
         if transition_index > size(transition_points, 1)
             break; % Exit if all transition points are reached
@@ -78,6 +82,7 @@ for i = 1:numel(alpha_f_values)
         end
     end
 
+    % Storing the values and plotting the results
     missile_path = missile_path(any(missile_path, 2), :);
  
     % Plot Trajectory
