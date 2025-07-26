@@ -62,3 +62,8 @@ The overall GNC loop can be designed as,
 * Applicable for **UAV guidance**, **autonomous navigation**, and **missile interception**
 * Geometric and vector-based modeling for improved clarity and performance
 
+
+
+##To run the file: 
+You need to have a MATLAB environment; the Geometric_3D files contain the initial values and all the functions required to calculate the circle's center and waypoints.
+
