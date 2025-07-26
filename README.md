@@ -64,6 +64,6 @@ The overall GNC loop can be designed as,
 
 
 
-##To run the file: 
+## To run the file: 
 You need to have a MATLAB environment; the Geometric_3D files contain the initial values and all the functions required to calculate the circle's center and waypoints.
 
